@@ -5,21 +5,21 @@
 class Knit < Formula
   desc "Knit your project context together, once."
   homepage "https://github.com/knit-dev/knit"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Kerman-Sanjuan/knit/releases/download/v1.0.2/knit_darwin_amd64.tar.gz"
-      sha256 "14c20a5bb8f7f50370b6c575a993d6a22e448458b62c5bdfcf86d1b71ea837b1"
+      url "https://github.com/Kerman-Sanjuan/knit/releases/download/v1.0.3/knit_darwin_amd64.tar.gz"
+      sha256 "48e69b7e096f557d9bb0f2b292c7d9134d5ef6e2df94578681f52540a1cf57cd"
 
       define_method(:install) do
         bin.install "knit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Kerman-Sanjuan/knit/releases/download/v1.0.2/knit_darwin_arm64.tar.gz"
-      sha256 "7dbef3717479143771221e18ea7e8b0457fbdea38de498e340a1d5edcbf7ea23"
+      url "https://github.com/Kerman-Sanjuan/knit/releases/download/v1.0.3/knit_darwin_arm64.tar.gz"
+      sha256 "4d57a78f464eb5c56178e430ef6de9377f41376cbec4c869897443ba7a31cf48"
 
       define_method(:install) do
         bin.install "knit"
@@ -29,15 +29,15 @@ class Knit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Kerman-Sanjuan/knit/releases/download/v1.0.2/knit_linux_amd64.tar.gz"
-      sha256 "d6e98897369e09285c75bdb880deef30b589e6b7af0a36410f0530b5931e5065"
+      url "https://github.com/Kerman-Sanjuan/knit/releases/download/v1.0.3/knit_linux_amd64.tar.gz"
+      sha256 "5e1149be0ca68c63463fa61c9391b24ed513c82eb8fbe2aa9dfa8cfe335ff737"
       define_method(:install) do
         bin.install "knit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Kerman-Sanjuan/knit/releases/download/v1.0.2/knit_linux_arm64.tar.gz"
-      sha256 "a0b219d3a4c8740e09ffb6621d2a64b239ac2dac858bb70b9789c6b947e2357f"
+      url "https://github.com/Kerman-Sanjuan/knit/releases/download/v1.0.3/knit_linux_arm64.tar.gz"
+      sha256 "45b467835e0638ab2de34b18da781c1b42eaac682a85c7af396e8fa772599b5e"
       define_method(:install) do
         bin.install "knit"
       end
